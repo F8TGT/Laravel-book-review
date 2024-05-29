@@ -6,7 +6,9 @@
         @csrf
         <label for="review">Review</label>
         <textarea name="review" id="review" required class="input mb-4"></textarea>
-
+        @error('review')
+            <p class="mb-4 error">{{ $message }}</p>
+        @enderror
         <label for="rating">Rating</label>
         <select name="rating" id="rating" class="input mb-4" required>
             <option value="">Select a Rating</option>
@@ -14,7 +16,9 @@
                 <option value="{{ $i }}">{{ $i }}</option>
             @endfor
         </select>
-
+        @error('rating')
+            <p class="mb-4 error">{{ $message }}</p>
+        @enderror
         <button type="submit" class="btn">Add Review</button>
     </form>
 @endsection

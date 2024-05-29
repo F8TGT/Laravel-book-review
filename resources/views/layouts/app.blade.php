@@ -48,6 +48,9 @@
         .reset-link {
             @apply text-slate-500 underline;
         }
+        .error {
+            @apply text-red-500 text-sm
+        }
     </style>
     {{-- blade-formatter-enable --}}
 </head>

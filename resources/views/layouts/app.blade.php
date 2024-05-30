@@ -46,7 +46,10 @@
             @apply font-medium text-slate-500;
         }
         .reset-link {
-            @apply text-slate-500 underline;
+            @apply font-medium text-gray-700 underline;
+        }
+        .link {
+            @apply font-medium text-gray-700 underline decoration-pink-500
         }
         .error {
             @apply text-red-500 text-sm
